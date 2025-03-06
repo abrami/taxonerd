@@ -108,7 +108,7 @@ class KnowledgeBase:
 
         alias_to_cuis: Dict[str, Set[str]] = {**alias_to_cuis}
 
-        conn = sqlite3.connect(db_path)
+        conn = sqlite3.connect(db_path, check_same_thread=False)
         c = conn.cursor()
         c.execute("""CREATE TABLE alias_to_cuis (alias, cuis)""")
         entries = [(k, str(v)) for k, v in alias_to_cuis.items()]
@@ -118,7 +118,7 @@ class KnowledgeBase:
 
     def get_conn_to_db(self, file_path: str = None):
         dburi = "file:{}?mode=rw".format(pathname2url(file_path))
-        conn = sqlite3.connect(dburi, uri=True)
+        conn = sqlite3.connect(dburi, uri=True, check_same_thread=False)
         return conn
 
     def get_cuis_from_alias(self, alias):
