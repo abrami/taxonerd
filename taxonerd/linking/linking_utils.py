@@ -170,8 +170,8 @@ class GbifKnowledgeBase(KnowledgeBase):
     def __init__(
         self,
         file_path=(
-            "https://cloud.univ-grenoble-alpes.fr/index.php/s/dm8attDW7EsdBpp/download",
-            "gbif_backbone_2019-09-06.jsonl",
+            "http://taxonerd.texttechnologylab.org/gbif/gbif_backbone_20230828.jsonl",
+            "gbif_backbone_20230828.jsonl",
         ),
         prefix="GBIF:",
     ):
@@ -182,8 +182,8 @@ class TaxRefKnowledgeBase(KnowledgeBase):
     def __init__(
         self,
         file_path=(
-            "https://cloud.univ-grenoble-alpes.fr/index.php/s/B48pMS5DmjiiiAJ/download",
-            "taxref_v13.jsonl",
+            "http://taxonerd.texttechnologylab.org/taxref/taxref_v17.jsonl",
+            "taxref_v17.jsonl",
         ),
         prefix="TAXREF:",
     ):
@@ -194,8 +194,8 @@ class NCBIKnowledgeBase(KnowledgeBase):
     def __init__(
         self,
         file_path=(
-            "https://cloud.univ-grenoble-alpes.fr/index.php/s/tzitebfeCyrKgLa/download",
-            "ncbi_taxonomy_2021_03_25.jsonl",
+            "http://taxonerd.texttechnologylab.org/ncbi/ncbi_taxonomy_20240522.jsonl",
+            "ncbi_taxonomy_20240522.jsonl",
         ),
         prefix="NCBI:",
     ):
@@ -206,8 +206,8 @@ class NCBILiteKnowledgeBase(KnowledgeBase):
     def __init__(
         self,
         file_path=(
-            "https://cloud.univ-grenoble-alpes.fr/index.php/s/cAmmpE6FxDxNBHj/download",
-            "ncbi_lite_2021_03_25.jsonl",
+                "http://taxonerd.texttechnologylab.org/ncbi/ncbi_taxonomy_20240522.jsonl",
+                "ncbi_taxonomy_20240522.jsonl",
         ),
         prefix="NCBI:",
     ):
