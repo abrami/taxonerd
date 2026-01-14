@@ -49,7 +49,7 @@ GbifLinkerPaths = LinkerPaths(
         "gbif_backbone/tfidf_vectorizer.joblib",
     ),  # tfidf_vectorizer.joblib
     tfidf_vectors=(
-        "http://taxonerd.texttechnologylab.org/gbif/tfidf_vectors_sparse.npz ",
+        "http://taxonerd.texttechnologylab.org/gbif/tfidf_vectors_sparse.npz",
         "gbif_backbone/tfidf_vectors_sparse.npz",
     ),  # tfidf_vectors_sparse.npz
     concept_aliases_list=(
@@ -60,7 +60,7 @@ GbifLinkerPaths = LinkerPaths(
 
 TaxRefLinkerPaths = LinkerPaths(
     ann_index=(
-        "http://taxonerd.texttechnologylab.org/taxref/nmslib_index.bin   ",
+        "http://taxonerd.texttechnologylab.org/taxref/nmslib_index.bin",
         "taxref/nmslib_index.bin",
     ),  # nmslib_index.bin
     tfidf_vectorizer=(
@@ -72,7 +72,7 @@ TaxRefLinkerPaths = LinkerPaths(
         "taxref/tfidf_vectors_sparse.npz",
     ),  # tfidf_vectors_sparse.npz
     concept_aliases_list=(
-        "http://taxonerd.texttechnologylab.org/taxref/concept_aliases.json ",
+        "http://taxonerd.texttechnologylab.org/taxref/concept_aliases.json",
         "taxref/concept_aliases.json",
     ),  # concept_aliases.json
 )
